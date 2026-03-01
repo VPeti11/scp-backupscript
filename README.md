@@ -102,13 +102,10 @@ Remote:
 
 ---
 
-## ⚠Warnings
+## Warnings
 
-* Uses `ssh.InsecureIgnoreHostKey()` (NOT secure for production)
+* Uses `ssh.InsecureIgnoreHostKey()`
 * SSH private key is hardcoded (bad practice)
-* No retry logic
-* No deletion sync
-* No batching
 * Opens new SSH connection per file change
 
 This is intentionally quick & dirty.
